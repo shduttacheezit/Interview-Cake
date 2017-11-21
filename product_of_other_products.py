@@ -1,13 +1,15 @@
+import doctest
+
 def prod_of_others(nums):
     """
     You have a list of integers, and for each index you want to 
     find the product of every integer except the integer at that index.
 
-    >>>prod_of_others([4])
-    IndexError: array should be at least 2 numbers
+        >>>prod_of_others([4])
+        IndexError: array should be at least 2 numbers
 
-    >>>prod_of_others([3, 4, 9, 2])
-    [72, 54, 24, 108]
+        >>>prod_of_others([3, 4, 9, 2])
+        [72, 54, 24, 108]
 
     """
     
@@ -32,11 +34,8 @@ def prod_of_others(nums):
         i -= 1
     
     return new_arr
-    
-    # return 'running with %s' % arg
 
-# run your function through some test cases here
-# remember: debugging is half the battle!
+
 print prod_of_others([8, 10, 2])
 print prod_of_others([2, 3, 4, 7])
 print prod_of_others([3])
